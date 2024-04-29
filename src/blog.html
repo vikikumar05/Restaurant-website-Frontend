@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Learning CSS</title>
+
+<link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+<link href="stylepr.css" rel="stylesheet">
+
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(225, 208, 185);
+    /* background-image: url("https://media.istockphoto.com/id/1130370595/photo/light-bulb-against-a-wooden-background.jpg?b=1&s=170667a&w=0&k=20&c=MjSmqgPCn428o1ubJEw8dBYTbOm1-S-W6W1K-rEXcco="); */
+}
+
+.main{
+    position: absolute;
+    justify-content: centre;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+    column-gap: 10px;
+    grid-template-rows: repeat(auto-fill,minmax(300px,300px));
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: centre;
+}
+ 
+
+h1{
+ text-align: center;
+}
+p{
+ font-size: 24px;
+}
+
+header{
+
+font-family:Arial, Helvetica, sans-serif;
+font-size: 30px;
+padding: 20px;
+}
+
+.box{
+ width: 20%;
+ float: left;
+ padding: 7px;
+ padding-left: 10px;  
+ display: block;
+ overflow: hidden;
+ border-radius: 3px;
+
+}
+
+img{
+ width: 100%;
+    border-radius: 4px;
+
+}
+img:hover{
+  transform: scale(2,2);
+  transition: .3s transform;
+
+}
+
+</style>
+
+</head>
+<body>
+<header>
+ 
+ <h1>Blog<p></p></h1>
+<hr/>
+
+</header>
+
+<main>
+    <div class="box">
+        <img src="blog/10.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/1.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/2.jpeg">
+    </div>
+    <div class="box">
+        <img src="blog/3.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/4.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/5.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/6.jpg">
+    </div>
+    <div class="box">
+        <img src="blog/7.webp">
+    </div>
+    <div class="box">
+        <img src="blog/8.webp">
+    </div>
+    <div class="box">
+        <img src="blog/9.jpg" >
+    </div>
+</main>
+
+
+
+</body>
+</html>
